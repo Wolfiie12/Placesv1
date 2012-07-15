@@ -1,0 +1,5 @@
+C:\Users\Carl\Documents\Visual Studio 2012\Projects\Placesv1\Placesv1.Model\bin\Debug\Placesv1.Model.dll
+C:\Users\Carl\Documents\Visual Studio 2012\Projects\Placesv1\Placesv1.Model\bin\Debug\Placesv1.Model.pdb
+C:\Users\Carl\Documents\Visual Studio 2012\Projects\Placesv1\Placesv1.Model\obj\Debug\Placesv1.Model.csprojResolveAssemblyReference.cache
+C:\Users\Carl\Documents\Visual Studio 2012\Projects\Placesv1\Placesv1.Model\obj\Debug\Placesv1.Model.dll
+C:\Users\Carl\Documents\Visual Studio 2012\Projects\Placesv1\Placesv1.Model\obj\Debug\Placesv1.Model.pdb

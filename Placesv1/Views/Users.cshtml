@@ -1,0 +1,15 @@
+﻿@model IEnumerable<Placesv1.Domain.Entities.User>
+
+@{
+    ViewBag.Title = "Users";
+}
+
+<h2>Users</h2>
+
+@foreach (var u in Model) {
+    <div class="item">
+        <h3>@u.NickName</h3>
+        @u.Email
+        @u.Password
+    </div>
+}

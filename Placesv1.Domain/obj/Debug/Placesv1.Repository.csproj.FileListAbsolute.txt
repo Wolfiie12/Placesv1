@@ -1,0 +1,16 @@
+C:\Users\Carl\Documents\Visual Studio 2012\Projects\Placesv1\Placesv1.Domain\obj\Debug\Placesv1.Repository.csprojResolveAssemblyReference.cache
+C:\Users\Carl\Documents\Visual Studio 2012\Projects\Placesv1\Placesv1.Domain\obj\Debug\Placesv1.Domain.dll
+C:\Users\Carl\Documents\Visual Studio 2012\Projects\Placesv1\Placesv1.Domain\obj\Debug\Placesv1.Domain.pdb
+C:\Users\Carl\documents\visual studio 2012\Projects\Placesv1\Placesv1.Domain\bin\Debug\Placesv1.Domain.dll.config
+C:\Users\Carl\documents\visual studio 2012\Projects\Placesv1\Placesv1.Domain\bin\Debug\Placesv1.Domain.dll
+C:\Users\Carl\documents\visual studio 2012\Projects\Placesv1\Placesv1.Domain\bin\Debug\Placesv1.Domain.pdb
+C:\Users\Carl\documents\visual studio 2012\Projects\Placesv1\Placesv1.Domain\bin\Debug\EntityFramework.dll
+C:\Users\Carl\documents\visual studio 2012\Projects\Placesv1\Placesv1.Domain\bin\Debug\Placesv1.DAL.dll
+C:\Users\Carl\documents\visual studio 2012\Projects\Placesv1\Placesv1.Domain\bin\Debug\Placesv1.Model.dll
+C:\Users\Carl\documents\visual studio 2012\Projects\Placesv1\Placesv1.Domain\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Carl\documents\visual studio 2012\Projects\Placesv1\Placesv1.Domain\bin\Debug\System.Web.Http.dll
+C:\Users\Carl\documents\visual studio 2012\Projects\Placesv1\Placesv1.Domain\bin\Debug\Placesv1.DAL.pdb
+C:\Users\Carl\documents\visual studio 2012\Projects\Placesv1\Placesv1.Domain\bin\Debug\Placesv1.Model.pdb
+C:\Users\Carl\documents\visual studio 2012\Projects\Placesv1\Placesv1.Domain\bin\Debug\EntityFramework.xml
+C:\Users\Carl\documents\visual studio 2012\Projects\Placesv1\Placesv1.Domain\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Carl\documents\visual studio 2012\Projects\Placesv1\Placesv1.Domain\bin\Debug\System.Web.Http.xml

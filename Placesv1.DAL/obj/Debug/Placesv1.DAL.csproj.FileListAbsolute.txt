@@ -1,0 +1,12 @@
+C:\Users\Carl\Documents\Visual Studio 2012\Projects\Placesv1\Placesv1.DAL\obj\Debug\Placesv1.DAL.csprojResolveAssemblyReference.cache
+C:\Users\Carl\documents\visual studio 2012\Projects\Placesv1\Placesv1.DAL\bin\Debug\Placesv1.DAL.dll.config
+C:\Users\Carl\documents\visual studio 2012\Projects\Placesv1\Placesv1.DAL\bin\Debug\Placesv1.DAL.dll
+C:\Users\Carl\documents\visual studio 2012\Projects\Placesv1\Placesv1.DAL\bin\Debug\Placesv1.DAL.pdb
+C:\Users\Carl\documents\visual studio 2012\Projects\Placesv1\Placesv1.DAL\bin\Debug\Afterthought.dll
+C:\Users\Carl\documents\visual studio 2012\Projects\Placesv1\Placesv1.DAL\bin\Debug\EntityFramework.dll
+C:\Users\Carl\documents\visual studio 2012\Projects\Placesv1\Placesv1.DAL\bin\Debug\EntityFramework.Patterns.dll
+C:\Users\Carl\documents\visual studio 2012\Projects\Placesv1\Placesv1.DAL\bin\Debug\Placesv1.Model.dll
+C:\Users\Carl\documents\visual studio 2012\Projects\Placesv1\Placesv1.DAL\bin\Debug\Placesv1.Model.pdb
+C:\Users\Carl\documents\visual studio 2012\Projects\Placesv1\Placesv1.DAL\bin\Debug\EntityFramework.xml
+C:\Users\Carl\documents\visual studio 2012\Projects\Placesv1\Placesv1.DAL\obj\Debug\Placesv1.DAL.dll
+C:\Users\Carl\documents\visual studio 2012\Projects\Placesv1\Placesv1.DAL\obj\Debug\Placesv1.DAL.pdb

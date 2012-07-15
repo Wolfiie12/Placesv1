@@ -1,0 +1,5 @@
+C:\Users\T.Chung\Desktop\BTL\BTL.Application.Web\Plugins\BTL.Application.UserAuthoring.dll
+C:\Users\T.Chung\Desktop\BTL\BTL.Application.Web\Plugins\BTL.Application.UserAuthoring.pdb
+C:\Users\T.Chung\Desktop\BTL\Plugins\BTL.Application.UserAuthoring\obj\Debug\BTL.Application.UserAuthoring.csprojResolveAssemblyReference.cache
+C:\Users\T.Chung\Desktop\BTL\Plugins\BTL.Application.UserAuthoring\obj\Debug\BTL.Application.UserAuthoring.dll
+C:\Users\T.Chung\Desktop\BTL\Plugins\BTL.Application.UserAuthoring\obj\Debug\BTL.Application.UserAuthoring.pdb

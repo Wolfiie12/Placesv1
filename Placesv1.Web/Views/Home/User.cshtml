@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Users";
+}
+
+<h2>Users</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<p>
+     <script>
+         $(function () {
+             $("#getUsers").click(function () {
+                 // We're using a Knockout model. This clears out the existing comments.
+                 viewModel.users([]);
+
+                 $.get('/api/users', function (data) {
+                     // Update the Knockout model (and thus the UI) with the comments received back 
+                     // from the Web API call.
+                     viewModel.users(data);
+                 });
+
+             });
+         });</script>
+
+</p>
+}
+

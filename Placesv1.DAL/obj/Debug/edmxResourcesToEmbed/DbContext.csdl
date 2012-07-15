@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="DbContext" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="DbContextContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="People" EntityType="DbContext.Person" />
+    <EntitySet Name="Places" EntityType="DbContext.Place" />
+    <EntitySet Name="Tags" EntityType="DbContext.Tag" />
+    <EntitySet Name="Accounts" EntityType="DbContext.Account" />
+    <EntitySet Name="Entries" EntityType="DbContext.Entry" />
+    <AssociationSet Name="PlaceTagPlace" Association="DbContext.PlaceTagPlace">
+      <End Role="Place" EntitySet="Places" />
+      <End Role="TagPlace" EntitySet="Entries" />
+    </AssociationSet>
+    <AssociationSet Name="TagPlaceTag" Association="DbContext.TagPlaceTag">
+      <End Role="TagPlace" EntitySet="Entries" />
+      <End Role="Tag" EntitySet="Tags" />
+    </AssociationSet>
+    <AssociationSet Name="PersonAccount" Association="DbContext.PersonAccount">
+      <End Role="Person" EntitySet="People" />
+      <End Role="Account" EntitySet="Accounts" />
+    </AssociationSet>
+    <AssociationSet Name="AccountPlace" Association="DbContext.AccountPlace">
+      <End Role="Account" EntitySet="Accounts" />
+      <End Role="Place" EntitySet="Places" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Person">
+    <Key>
+      <PropertyRef Name="PersonID" />
+    </Key>
+    <Property Type="Int32" Name="PersonID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Email" Nullable="false" />
+    <NavigationProperty Name="Account" Relationship="DbContext.PersonAccount" FromRole="Person" ToRole="Account" />
+  </EntityType>
+  <EntityType Name="Place">
+    <Key>
+      <PropertyRef Name="PlaceID" />
+    </Key>
+    <Property Type="Int32" Name="PlaceID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Title" Nullable="false" />
+    <Property Type="String" Name="Description" Nullable="false" />
+    <Property Type="String" Name="URL" Nullable="false" />
+    <Property Type="Int32" Name="AccountID" Nullable="false" />
+    <NavigationProperty Name="TagPlaces" Relationship="DbContext.PlaceTagPlace" FromRole="Place" ToRole="TagPlace" />
+    <NavigationProperty Name="Account" Relationship="DbContext.AccountPlace" FromRole="Place" ToRole="Account" />
+    <Property Type="Boolean" Name="Public" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Tag">
+    <Key>
+      <PropertyRef Name="TagID" />
+    </Key>
+    <Property Type="Int32" Name="TagID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" Nullable="false" />
+    <Property Type="Int32" Name="TagPlaceTagID" Nullable="false" />
+    <Property Type="String" Name="TagPlacePlaceID" Nullable="false" />
+    <NavigationProperty Name="TagPlaces" Relationship="DbContext.TagPlaceTag" FromRole="Tag" ToRole="TagPlace" />
+  </EntityType>
+  <EntityType Name="Account">
+    <Key>
+      <PropertyRef Name="AccountID" />
+    </Key>
+    <Property Type="Int32" Name="AccountID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Password" Nullable="false" />
+    <NavigationProperty Name="Person" Relationship="DbContext.PersonAccount" FromRole="Account" ToRole="Person" />
+    <Property Type="String" Name="PersonID" Nullable="false" />
+    <NavigationProperty Name="Places" Relationship="DbContext.AccountPlace" FromRole="Account" ToRole="Place" />
+  </EntityType>
+  <EntityType Name="Entry">
+    <Key>
+      <PropertyRef Name="TagID" />
+      <PropertyRef Name="PlaceID" />
+    </Key>
+    <Property Type="Int32" Name="TagID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="PlaceID" Nullable="false" />
+    <NavigationProperty Name="Place" Relationship="DbContext.PlaceTagPlace" FromRole="TagPlace" ToRole="Place" />
+    <NavigationProperty Name="Tag" Relationship="DbContext.TagPlaceTag" FromRole="TagPlace" ToRole="Tag" />
+  </EntityType>
+  <Association Name="PlaceTagPlace">
+    <End Type="DbContext.Place" Role="Place" Multiplicity="1" />
+    <End Type="DbContext.Entry" Role="TagPlace" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Place">
+        <PropertyRef Name="PlaceID" />
+      </Principal>
+      <Dependent Role="TagPlace">
+        <PropertyRef Name="PlaceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TagPlaceTag">
+    <End Type="DbContext.Entry" Role="TagPlace" Multiplicity="*" />
+    <End Type="DbContext.Tag" Role="Tag" Multiplicity="0..1" />
+  </Association>
+  <Association Name="PersonAccount">
+    <End Type="DbContext.Person" Role="Person" Multiplicity="1" />
+    <End Type="DbContext.Account" Role="Account" Multiplicity="1" />
+  </Association>
+  <Association Name="AccountPlace">
+    <End Type="DbContext.Account" Role="Account" Multiplicity="1" />
+    <End Type="DbContext.Place" Role="Place" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Account">
+        <PropertyRef Name="AccountID" />
+      </Principal>
+      <Dependent Role="Place">
+        <PropertyRef Name="AccountID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

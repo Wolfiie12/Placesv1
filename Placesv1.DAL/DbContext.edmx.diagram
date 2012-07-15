@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0290ea75355644e2882a326521369e91" Name="Diagram1" >
+        <EntityTypeShape EntityType="DbContext.Person" Width="1.5" PointX="0.625" PointY="2.875" />
+        <EntityTypeShape EntityType="DbContext.Place" Width="1.5" PointX="2.75" PointY="0.5" />
+        <EntityTypeShape EntityType="DbContext.Tag" Width="1.5" PointX="7" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbContext.Account" Width="1.5" PointX="0.625" PointY="0.5" />
+        <EntityTypeShape EntityType="DbContext.Entry" Width="1.5" PointX="4.875" PointY="0.5" />
+        <AssociationConnector Association="DbContext.PlaceTagPlace" />
+        <AssociationConnector Association="DbContext.TagPlaceTag" />
+        <AssociationConnector Association="DbContext.PersonAccount" />
+        <AssociationConnector Association="DbContext.AccountPlace" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
